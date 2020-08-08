@@ -1,10 +1,10 @@
 # Assignment 1
 ## Task 1: Density Plots
 1. Plot the longitude vs latitude several ways within a single figure (each in its own axes):
-  1. Using the matplotlib defaults.
-  2. Adjusting alpha and marker size to compensate for overplotting.
-  3. Using a hexbin plot.
-  4. Subsampling the dataset.
+    1. Using the matplotlib defaults.
+    2. Adjusting alpha and marker size to compensate for overplotting.
+    3. Using a hexbin plot.
+    4. Subsampling the dataset.
 
 For each but the first one, ensure that all the plotting area is used in a reasonable way and thatas much information as possible is conveyed; this is somewhat subjective and there is no oneright answer.
 
