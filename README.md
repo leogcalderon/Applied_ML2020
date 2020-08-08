@@ -4,3 +4,8 @@ This class offers a hands-on approach to machine learning and data science. The 
 
 ### [Visualization](Visualization/)
 Principles of Data Visualization and matplotlib library.
+
+### [Supervised learning and model validation](Model_validation/)
+How to tune and validate a model
+
+### [Preprocessing and feature transformations](Preprocessing/)
