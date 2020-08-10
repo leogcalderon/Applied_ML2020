@@ -7,6 +7,7 @@ Many algorithms are scale sensitive. Ther are several ways to scale data:
 - **MinMaxScaler:** scales every value between 0 and 1. Useful with features that have very clear boundaries.
 - **RobustScaler:** uses median and quantiles, it is robust with respect to outliers.
 - **Normalizer:** rarely used.
+
 ![Scaling methods](images/scale_methods.png)
 
 *Sparce data:* only scale, don't center (use MaxAbsScaler). Because if we substract the mean to the 0 values, it converts to a dense data.
@@ -33,7 +34,7 @@ df['categorical_feature'] = df['categorical_feature'].astype("category").cat.cod
 ```python
 pd.get_dummies(df)
 ```
--**Target encoding (impact encoding):** for high cardinality categorical features, instead of a lot of one hot variables, one response encoded variable. This encoding will overfit the train set.
+- **Target encoding (impact encoding):** for high cardinality categorical features, instead of a lot of one hot variables, one response encoded variable. This encoding will overfit the train set.
 
 ![Column Transform pipeline](images/column_transform.png)
 ```python
