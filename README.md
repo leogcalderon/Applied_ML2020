@@ -9,3 +9,4 @@ Principles of Data Visualization and matplotlib library.
 How to tune and validate a model
 
 ### [Preprocessing and feature transformations](Preprocessing/)
+Encoding and scaling pipelines
