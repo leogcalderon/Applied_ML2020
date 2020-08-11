@@ -6,7 +6,12 @@ This class offers a hands-on approach to machine learning and data science. The 
 Principles of Data Visualization and matplotlib library.
 
 ### [Supervised learning and model validation](Model_validation/)
-How to tune and validate a model
+How to tune and validate a model.
 
 ### [Preprocessing and feature transformations](Preprocessing/)
-Encoding and scaling pipelines
+Encoding and scaling pipelines.
+
+### [Linear models for Regression](LM_Regression/)
+Useful pipelines for some ML linear models for regression.
+
+### [Linear models for Classification](LM_Classification/)
