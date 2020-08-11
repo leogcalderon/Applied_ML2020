@@ -7,7 +7,6 @@ Many algorithms are scale sensitive. Ther are several ways to scale data:
 - **MinMaxScaler:** scales every value between 0 and 1. Useful with features that have very clear boundaries.
 - **RobustScaler:** uses median and quantiles, it is robust with respect to outliers.
 - **Normalizer:** rarely used.
-
 ![Scaling methods](images/scale_methods.png)
 
 *Sparce data:* only scale, don't center (use MaxAbsScaler). Because if we substract the mean to the 0 values, it converts to a dense data.
@@ -34,7 +33,7 @@ df['categorical_feature'] = df['categorical_feature'].astype("category").cat.cod
 ```python
 pd.get_dummies(df)
 ```
-- **Target encoding (impact encoding):** for high cardinality categorical features, instead of a lot of one hot variables, one response encoded variable. This encoding will overfit the train set.
+-**Target encoding (impact encoding):** for high cardinality categorical features, instead of a lot of one hot variables, one response encoded variable. This encoding will overfit the train set.
 
 ![Column Transform pipeline](images/column_transform.png)
 ```python
@@ -46,3 +45,29 @@ model = make_pipeline(preprocess, LogisticRegression())
 ```
 
 *Models supporting discrete features:* All tree based models, naive Bayes
+
+
+### Missing values
+- Can be encoded in many ways like: 999, ???, np.inf, np.nan, N/A, Unknown.
+- Often missing values are informative. (Use missing flags -```python MissingIndicator```)
+- Options:
+        1. Delete column (if a lot of values for that column are missing)
+        2. Delete row (if a lot of values for that row are missing)
+        3. Imputation:
+                - mean/median
+                - kNN
+                - Regression models
+                - Matrix factorization
+
+**Methodology approach:**
+1. Baseline: Dropping columns/rows
+2. Mean/median: ```python SimpleImputer()``` (adds noise)
+3. kNN: ```python KNNImputer()``` (very slow on large datasets)
+4. Model-Driven imputation: ```python imp = IterativeImputer(predictor = RandomForestRegressor())``` (never converges - not an issue)
+
+![Imputation methods](images/imputation.png)
+
+
+*Normally, if you have a categorical missing value, you make a missing flag instead of imputation.*
+
+*Be careful with leaking data (make pipeline)*
