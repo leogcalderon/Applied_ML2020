@@ -26,26 +26,27 @@ param_grid = {'alpha': np.logspace(-4, -1, 10),
 
 *Linear models work better with a normal distribuited target (log transformation).*
 
-        - With skewed target:
-        ```python
-        cross_val_score(make_pipeline(preprocess, LinearRegression()),
-                                      X_train, y_train, cv=5)
+- With skewed target:
+```python
+cross_val_score(make_pipeline(preprocess, LinearRegression()),
+                X_train, y_train, cv=5)
 
-        array([0.928, 0.927, 0.932, 0.898, 0.884])
-        ```
-        - With a normal target:
+array([0.928, 0.927, 0.932, 0.898, 0.884])
+```
 
-        ```python
-        from sklearn.compose import TransformedTargetRegressor
+- With a normal target:
 
-        log_regressor = TransformedTargetRegressor(LinearRegression(), 
-                                                   func=np.log, 
-                                                   inverse_func=np.exp)
+```python
+from sklearn.compose import TransformedTargetRegressor
 
-        cross_val_score(make_pipeline(preprocess, log_regressor),
-                        X_train, y_train, cv=5)
+log_regressor = TransformedTargetRegressor(LinearRegression(), 
+                                           func=np.log, 
+                                           inverse_func=np.exp)
 
-        array([0.95 , 0.943, 0.941, 0.913, 0.922])
-        ```
-        *TransformedTargetRegressor* applies log, train and applies exp.
+cross_val_score(make_pipeline(preprocess, log_regressor),
+                X_train, y_train, cv=5)
+
+array([0.95 , 0.943, 0.941, 0.913, 0.922])
+```
+*TransformedTargetRegressor* applies log, train and applies exp.
 
