@@ -49,7 +49,7 @@ model = make_pipeline(preprocess, LogisticRegression())
 
 ### Missing values
 - Can be encoded in many ways like: 999, ???, np.inf, np.nan, N/A, Unknown.
-- Often missing values are informative. (Use missing flags -```python MissingIndicator```)
+- Often missing values are informative. (Use missing flags -```MissingIndicator```)
 - Options:
         1. Delete column (if a lot of values for that column are missing)
         2. Delete row (if a lot of values for that row are missing)
@@ -61,9 +61,12 @@ model = make_pipeline(preprocess, LogisticRegression())
 
 **Methodology approach:**
 1. Baseline: Dropping columns/rows
-2. Mean/median: ```python SimpleImputer()``` (adds noise)
-3. kNN: ```python KNNImputer()``` (very slow on large datasets)
-4. Model-Driven imputation: ```python imp = IterativeImputer(predictor = RandomForestRegressor())``` (never converges - not an issue)
+2. Mean/median: ```SimpleImputer()``` (adds noise)
+3. kNN: ```KNNImputer()``` (very slow on large datasets)
+4. Model-Driven imputation: (never converges - not an issue)
+```python
+imp = IterativeImputer(predictor = RandomForestRegressor())
+``` 
 
 ![Imputation methods](images/imputation.png)
 
