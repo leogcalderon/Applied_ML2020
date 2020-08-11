@@ -7,14 +7,14 @@
 ### Ridge
 - Always has a unique solution.
 - Alpha: L2 penalization (tune with Grid search) 
-```python np.logspace(-3,3,13)```
+```np.logspace(-3,3,13)```
 - Very important to scale data.
 
 ### Lasso
 - Set some coefficients to zero.
 - We get automatic feature selection.
 - Alpha: L1 penalization (tune with Grid search) 
-```python np.logspace(-5, 0, 10)```
+```np.logspace(-5, 0, 10)```
 
 ### Elastic Net
 - Combines benefits of Ridge and Lasso
