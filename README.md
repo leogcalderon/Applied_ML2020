@@ -2,6 +2,11 @@
 
 This class offers a hands-on approach to machine learning and data science. The class discusses the application of machine learning methods like SVMs, Random Forests, Gradient Boosting and neural networks on real world dataset, including data preparation, model selection and evaluation. Apart from applying models, we will also discuss software development tools and practices relevant to productionizing machine learning models.
 
+##Assignments
+- [Visualization](Visualization/Assignment 1 - Visualization.ipynb)
+- [Model validation - Classification](Model_validation/Assignment 2 - Classification.ipynb)
+- [Model validation - Regression](Model_validation/Assignment 2 - Regression.ipynb)
+##Lectures
 ### [Visualization](Visualization/)
 Principles of Data Visualization and matplotlib library.
 
