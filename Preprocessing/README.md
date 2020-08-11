@@ -45,3 +45,32 @@ model = make_pipeline(preprocess, LogisticRegression())
 ```
 
 *Models supporting discrete features:* All tree based models, naive Bayes
+
+
+### Missing values
+- Can be encoded in many ways like: 999, ???, np.inf, np.nan, N/A, Unknown.
+- Often missing values are informative. (Use missing flags -```MissingIndicator```)
+- Options:
+        1. Delete column (if a lot of values for that column are missing)
+        2. Delete row (if a lot of values for that row are missing)
+        3. Imputation:
+                - mean/median
+                - kNN
+                - Regression models
+                - Matrix factorization
+
+**Methodology approach:**
+1. Baseline: Dropping columns/rows
+2. Mean/median: ```SimpleImputer()``` (adds noise)
+3. kNN: ```KNNImputer()``` (very slow on large datasets)
+4. Model-Driven imputation: (never converges - not an issue)
+```python
+imp = IterativeImputer(predictor = RandomForestRegressor())
+``` 
+
+![Imputation methods](images/imputation.png)
+
+
+*Normally, if you have a categorical missing value, you make a missing flag instead of imputation.*
+
+*Be careful with leaking data (make pipeline)*
