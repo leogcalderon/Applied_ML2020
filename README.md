@@ -21,3 +21,7 @@ Encoding and scaling pipelines.
 Useful pipelines for some ML linear models for regression.
 
 ### [Linear models for Classification](LM_Classification/)
+Theory about Logistic Regression and SVMs
+
+### [Trees, Forests & Ensembles](Ensembles/)
+Review of trees an ensembles models.
