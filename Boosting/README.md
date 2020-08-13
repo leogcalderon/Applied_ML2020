@@ -17,7 +17,7 @@ Most used models.
 - Now, we look the residuals of the first model and fit a new model to them. We use a learning rate for the previous prediction. (gamma)
 - Iterate this to k models.
 
-![Algorithm](alg.png)
+![Algorithm](images/alg.png)
 
 - **Early stopping:** Adding trees can lead to overfitting. Stop adding trees when validation accuracy stops increasing.
 - Two choices:
