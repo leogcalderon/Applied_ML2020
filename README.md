@@ -6,6 +6,7 @@ This class offers a hands-on approach to machine learning and data science. The 
 - [1. Visualization](https://github.com/leogcalderon/Applied_ML2020/blob/master/Visualization/Assignment%201%20-%20Visualization.ipynb)
 - [2.1 Model validation - Classification](https://github.com/leogcalderon/Applied_ML2020/blob/master/Preprocessing/Assignment%202%20-%20Classification.ipynb)
 - [2.2 Model validation - Regression](https://github.com/leogcalderon/Applied_ML2020/blob/master/Preprocessing/Assignment%202%20-%20Regression.ipynb)
+- [3. Full machine learning task](https://github.com/leogcalderon/Applied_ML2020/blob/master/Evaluation/)
 
 ## Lecture resumes
 ### [Visualization](Visualization/)
@@ -30,3 +31,4 @@ Review of trees an ensembles models.
 Gradient boosting and implementations.
 
 ### [Model evaluation and Metrics](Evaluation/)
+Metrics for binary classification and Regression.
