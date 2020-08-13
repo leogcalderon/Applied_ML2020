@@ -25,3 +25,8 @@ Theory about Logistic Regression and SVMs
 
 ### [Trees, Forests & Ensembles](Ensembles/)
 Review of trees an ensembles models.
+
+### [Gradient Descent, Gradient Boosting](Boosting/)
+Gradient boosting and implementations.
+
+### [Model evaluation and Metrics](Evaluation/)
