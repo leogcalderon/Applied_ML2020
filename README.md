@@ -4,9 +4,9 @@ This class offers a hands-on approach to machine learning and data science. The 
 
 ## Assignments
 - [1. Visualization](https://github.com/leogcalderon/Applied_ML2020/blob/master/Visualization/Assignment%201%20-%20Visualization.ipynb)
-- [2.1 Model validation - Classification](https://github.com/leogcalderon/Applied_ML2020/blob/master/Preprocessing/Assignment%202%20-%20Classification.ipynb)
-- [2.2 Model validation - Regression](https://github.com/leogcalderon/Applied_ML2020/blob/master/Preprocessing/Assignment%202%20-%20Regression.ipynb)
-- [3. Full machine learning task](https://github.com/leogcalderon/Applied_ML2020/blob/master/Evaluation/)
+- [2.1. Model validation - Classification](https://github.com/leogcalderon/Applied_ML2020/blob/master/Preprocessing/Assignment%202%20-%20Classification.ipynb)
+- [2.2. Model validation - Regression](https://github.com/leogcalderon/Applied_ML2020/blob/master/Preprocessing/Assignment%202%20-%20Regression.ipynb)
+- [3. Full machine learning task](https://github.com/leogcalderon/Applied_ML2020/blob/master/Evaluation/Assignment%203%20-%20Full%20ML%20task.ipynb)
 
 ## Lecture resumes
 ### [Visualization](Visualization/)
