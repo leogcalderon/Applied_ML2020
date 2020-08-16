@@ -39,10 +39,10 @@ Heuristic for imabalnced data:
 2. **Random Oversampling:** sample with replacement the miniorty class.
 3. **Class-weights:** instead of repeating samples, re-weight the loss function.
 
-        ```python
-        LogisticRegression(class_weight='balanced')
-        RandomForestClassifier(class_weight='balanced')
-        ```
+      ```python
+      LogisticRegression(class_weight='balanced')
+      RandomForestClassifier(class_weight='balanced')
+      ```
 4. **Ensemble Resampling:** for each tree we build a balanced sample, but every one will have different samples for the mayority class.
 
       ```python
