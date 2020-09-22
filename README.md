@@ -20,4 +20,5 @@ This class offers a hands-on approach to machine learning and data science. The 
 | [Gradient Descent, Gradient Boosting](Boosting/) | Gradient boosting and implementations. |
 | [Model evaluation and Metrics](Evaluation/) | Metrics for binary classification and Regression. |
 | [Calibration, Imbalanced data](Imbalanced/) | Calibration and method to balance classes |
-| [Model Interpretation and Feature Selection](Interpretation/) | ... |
+| [Model Interpretation and Feature Selection](Interpretation/) | Importance and selection of features |
+| [Auto ML](AutoML/) | ... |
