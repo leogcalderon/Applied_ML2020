@@ -22,3 +22,4 @@ This class offers a hands-on approach to machine learning and data science. The 
 | [Calibration, Imbalanced data](Imbalanced/) | Calibration and method to balance classes |
 | [Model Interpretation and Feature Selection](Interpretation/) | Importance and selection of features |
 | [Auto ML](AutoML/) | ... |
+| [Time series](Time_series/) | Forecasting and classification methods |
